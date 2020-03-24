@@ -1,0 +1,31 @@
+<mat-card class="card-container">
+  <mat-card-header *ngFor="let song of songList">
+    <img mat-card-avatar src={{song.picture}}>
+    <mat-card-title class="title-container">
+      <a
+        class="artist-link"
+        href="{{ song.artistLink }}"
+        target="_blank"
+      >
+        {{ song.artist }}
+      </a>
+    </mat-card-title>
+    <mat-card-subtitle class="song-details-container">
+      <a
+        class="song-title"
+        href="{{ song.trackLink }}"
+        target="_blank"
+      >
+        {{ song.title }}
+      </a>
+      .
+      <a
+        class="album-link"
+        href="{{ song.albumLink }}"
+        target="_blank"
+      >
+        {{ song.album }}
+      </a>
+    </mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
