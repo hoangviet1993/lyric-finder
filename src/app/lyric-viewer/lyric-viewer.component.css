@@ -16,3 +16,8 @@
   color: rgb(255, 255, 255);
   height: fit-content;
 }
+
+.back-button {
+  background-color: black;
+  color: white;
+}
