@@ -1,28 +1,44 @@
 a.artist-link {
   text-decoration: none;
+  text-align: left;
   color: white;
   margin-left: 10px;
 }
 
 a.album-link {
   text-decoration: none;
+  text-align: left;
   color: white;
   margin-left: 10px;
 }
 
 a.song-title {
   text-decoration: none;
+  text-align: left;
   color: white;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .song-details-container {
+  color: white;
   flex-direction: row;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .song-details-container {
+    flex-direction: column;
+  }
+  .separator-dot-container {
+    display: none;
+  }
+  a.song-title {
+    margin: 10px 10px;
+  }
 }
 
 .card-container {
@@ -44,6 +60,12 @@ a.song-title {
 
 .card-container:hover {
   background-color: #484F54;
+}
+
+.card-header-container {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
 }
 
 .song-list-container {
