@@ -20,9 +20,9 @@ export class LyricViewerComponent implements OnInit {
       artist, title).subscribe(
         (response) => {
         this.lyrics = response.lyrics;
-        console.log(response.lyrics);
         // tslint:disable-next-line: no-shadowed-variable
         }, (error) => {
+          window.scrollTo(0, 0);
           this.lyrics = error.error.error;
         }
     );
